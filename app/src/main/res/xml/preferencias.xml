@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Categoria 1">
+
+        <CheckBoxPreference
+            android:key="opcion1"
+            android:title="Preferencias 1"
+            android:summary="Descripción de la preferencia 1" />
+        <EditTextPreference
+            android:key="opcion2"
+            android:title="Preferencia 2"
+            android:summary="Descripción de la preferencia 2"
+            android:dialogTitle="Introduce un valor"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Categoria 2">
+
+        <ListPreference
+            android:key="opcion3"
+            android:title="Preferencia 3"
+            android:summary="Descripción de la preferencia 3"
+            android:dialogTitle="Indicar color"
+            android:entries="@array/colores"
+            android:entryValues="@array/codigocolores"/>
+
+        <SwitchPreference
+            android:key="opcion4"
+            android:title="Preferencia Switch"
+            android:summary="Descripción de la preferencia Switch"
+            android:checked="false"/>
+
+        <RingtonePreference
+            android:key="opcion5"
+            android:title="Preferencia Ringtone"
+            android:summary="Descripción de la preferencia Ringtone" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
